@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <form id="otpForm" action="#" method="post">
+                <div id="demo">
+                    <div id="otpv">
+                        <label class="otpvl">OTP Verification</label>
+                    </div>
+                    <div id="demo1">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                        <input type="button" id="submit" value="Submit" onclick="sendOTP()">
+                    </div>
+                    <div id="demo2" style="display: none;">
+                        <label for="otp">OTP</label>
+                        <input type="text" id="otp" name="otp" pattern="[0-9]{6}" placeholder="Enter your OTP" required>
+                        <input type="button" id="submits" value="Verify" onclick="verifyOTP()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
